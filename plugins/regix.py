@@ -165,7 +165,7 @@ PROGRESS = """
 
 ⏳️ ETA: {5}
 
-My Developer @Mr_Jisshu
+My Developer @Unreal_X_shubham
 """
 
 async def msg_edit(msg, text, button=None, wait=None):
