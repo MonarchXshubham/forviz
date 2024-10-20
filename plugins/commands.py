@@ -12,11 +12,17 @@ from pyrogram.types import *
 TIMEZONE = "Asia/Kolkata"
 
 main_buttons = [[
-        InlineKeyboardButton('🦋 ᴜᴘᴅᴀᴛᴇs ', url='https://t.me/JISSHU_BOTS'),
-        InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ ✨', url='https://t.me/Jisshu_support')
+        InlineKeyboardButton('🏡', callback_data='start'),
+        InlineKeyboardButton('⚙️', callback_data='settings#main'),
+        InlineKeyboardButton('🆘', callback_data='how_to_use'),
+        InlineKeyboardButton('🖥', callback_data='status'),
+        InlineKeyboardButton('⚡️', callback_data='about')
+        ],[
+        InlineKeyboardButton('🦋 ᴜᴘᴅᴀᴛᴇs ', url='https://t.me/vr_unreal'),
+        InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ ✨', url='https://t.me/vr_support')
         ],[
         InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton(' ᴀʙᴏᴜᴛ 😎', callback_data='about')
+        InlineKeyboardButton(' ᴀʙᴏᴜᴛ ⚡️', callback_data='about')
         ],[
         InlineKeyboardButton('🛠️ sᴇᴛᴛɪɴɢs ⚙️', callback_data='settings#main')
         ]]
@@ -94,6 +100,12 @@ async def helpcb(bot, query):
         text=Translation.HELP_TXT,
         reply_markup=InlineKeyboardMarkup(
             [[
+            InlineKeyboardButton('🏡', callback_data='start'),
+            InlineKeyboardButton('⚙️', callback_data='settings#main'),
+            InlineKeyboardButton('🆘', callback_data='how_to_use'),
+            InlineKeyboardButton('🖥', callback_data='status'),
+            InlineKeyboardButton('⚡️', callback_data='about')
+            ],[
             InlineKeyboardButton('🛠️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ 🛠️', callback_data='how_to_use')
             ],[
             InlineKeyboardButton('⚙️ sᴇᴛᴛɪɴɢs ⚙️', callback_data='settings#main'),
@@ -134,7 +146,7 @@ async def back(bot, query):
 async def about(bot, query):
     await query.message.edit_media(
         media=InputMediaPhoto(
-        media="https://graph.org/file/e223aea8aca83e99162bb.jpg",
+        media="https://vault.pictures/p/4add4cab289149138c7f5ea4ec9d4813",
         caption=Translation.ABOUT_TXT),
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⛔ Back', callback_data='back')]])
         )
