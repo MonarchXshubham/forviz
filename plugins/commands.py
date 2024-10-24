@@ -30,27 +30,7 @@ main_buttons = [[
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
     user = message.from_user
-    if Config.FORCE_SUB_ON:
-        # Check if the user has joined the force subscription channel
-        try:
-            member = await client.get_chat_member(Config.FORCE_SUB_CHANNEL, user.id)
-            if member.status == "kicked":
-                await client.send_message(
-                    chat_id=message.chat.id,
-                    text="You are banned from using this bot.",
-                )
-                return
-        except:
-            # Send a message asking the user to join the channel
-            join_button = [
-                [InlineKeyboardButton("Join Channel", url=f"{Config.FORCE_SUB_CHANNEL}")],
-                [InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{client.username}?start=start")]
-            ]
-            await client.send_message(
-                chat_id=message.chat.id,
-                text="Please join our channel to use this bot.",
-                reply_markup=InlineKeyboardMarkup(join_button)
-            )
+
 # Check for force subscription
     Fsub = await ForceSub(client, message)
     if Fsub == 400:
