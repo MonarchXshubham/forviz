@@ -42,7 +42,7 @@ class Translation(object):
   ABOUT_TXT = """<b>
 ╭───────────⍟
 ├◈ ᴍy ɴᴀᴍᴇ : <a href=https://t.me/VR_Forward_Bot>Auto Forward Bot</a>
-├◈ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/unreal_X_shubham>♡ ꜱʜᴜʙʜᴀᴍ ♡</a> 
+├◈ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/Vr_Necromancer>ɴᴇᴄʀᴏᴍᴀɴᴄᴇʀ</a> 
 ├◈ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ: <a href=https://t.me/vr_unreal>ᴠʀ ᴜɴʀᴇᴀʟ </a>   
   ├◈ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ: <a href=https://t.me/vr_support>ᴠʀ ꜱᴜᴘᴘᴏʀᴛ </a>   
 ├◈ Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>
