@@ -18,11 +18,10 @@ main_buttons = [[
         InlineKeyboardButton('🖥', callback_data='status'),
         InlineKeyboardButton('⚡️', callback_data='about')
         ],[
-        InlineKeyboardButton('🦋 ᴜᴘᴅᴀᴛᴇs ', url='https://t.me/vr_unreal'),
-        InlineKeyboardButton(' sᴜᴘᴘᴏʀᴛ ✨', url='https://t.me/vr_support')
+        InlineKeyboardButton('❗️ʜᴇʟᴘ', callback_data='help')
         ],[
-        InlineKeyboardButton('🛠️ ʜᴇʟᴘ', callback_data='help'),
-        InlineKeyboardButton(' ᴀʙᴏᴜᴛ ⚡️', callback_data='about')
+        InlineKeyboardButton('📜ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/vr_unreal'),
+        InlineKeyboardButton('📡ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/vr_support')
         ],[
         InlineKeyboardButton('🛠️ sᴇᴛᴛɪɴɢs ⚙️', callback_data='settings#main')
         ]]
@@ -56,12 +55,6 @@ async def start(client, message):
 
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id, message.from_user.mention)
-        # Log the new user to the log channel
-        log_channel = Config.LOG_CHANNEL # Replace with your log channel ID
-        await client.send_message(
-            chat_id=log_channel,
-            text=f"#NewUser\n\nIᴅ - {user.id}\nNᴀᴍᴇ - {message.from_user.mention}"
-        )
 
     reply_markup = InlineKeyboardMarkup(main_buttons)
     current_time = datetime.now(pytz.timezone(TIMEZONE))
