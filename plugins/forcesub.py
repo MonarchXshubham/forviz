@@ -24,7 +24,7 @@ async def ForceSub(c: Client, m: Message):
         if user.status == "kicked":
             await c.send_message(
                 chat_id=m.from_user.id,
-                text="Sᴏʀʀʏ sɪʀ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ᴀᴅᴍɪɴ @Film_Nest .",
+                text="Sᴏʀʀʏ sɪʀ, ʏᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Cᴏɴᴛᴀᴄᴛ ᴍʏ ᴀᴅᴍɪɴ @VR_NECROMANCER .",
                 disable_web_page_preview=True,
                 parse_mode="Markdown",
                 
