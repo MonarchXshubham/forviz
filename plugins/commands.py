@@ -99,12 +99,12 @@ async def helpcb(bot, query):
             InlineKeyboardButton('🖥', callback_data='status'),
             InlineKeyboardButton('⚡️', callback_data='about')
             ],[
-            InlineKeyboardButton('🛠️ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ 🛠️', callback_data='how_to_use')
+            InlineKeyboardButton('• ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ', callback_data='how_to_use')
             ],[
-            InlineKeyboardButton('⚙️ sᴇᴛᴛɪɴɢs ⚙️', callback_data='settings#main'),
-            InlineKeyboardButton('📊 sᴛᴀᴛᴜs 📊', callback_data='status')
+            InlineKeyboardButton('• sᴇᴛᴛɪɴɢs ', callback_data='settings#main'),
+            InlineKeyboardButton('• sᴛᴀᴛᴜs ', callback_data='status')
             ],[
-            InlineKeyboardButton('⛔ ʙᴀᴄᴋ', callback_data='back')
+            InlineKeyboardButton('• ᴀʙᴏᴜᴛ', callback_data='about')
             ]]
         ))
 
