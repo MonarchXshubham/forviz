@@ -51,10 +51,10 @@ async def start(client, message):
                 text="Please join our channel to use this bot.",
                 reply_markup=InlineKeyboardMarkup(join_button)
             )
-            return
-
-    if not await db.is_user_exist(user.id):
-        await db.add_user(user.id, message.from_user.mention)
+# Check for force subscription
+    Fsub = await ForceSub(client, message)
+    if Fsub == 400:
+        return
 
     reply_markup = InlineKeyboardMarkup(main_buttons)
     current_time = datetime.now(pytz.timezone(TIMEZONE))
